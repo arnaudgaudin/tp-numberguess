@@ -74,7 +74,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: .25rem;
-    justify-content: space-between;
+}
+
+.guess-history-title {
+    font-weight: bold;
+}
+
+.guess-history-list {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .125rem;
 }
 
 .guess-help {
