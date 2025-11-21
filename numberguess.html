@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Number Guess !</title>
+</head>
+<body>
+
+    <form id="numberGuess" class="guess">
+        <h1 class="guess-title">Number Guess !</h1>
+        <div class="guess-level">
+            <label for="level">Niveau de difficulté</label>
+            <select class="guess-level-select" name="level" id="level" required>
+                <option value="1" selected>Novice</option>
+                <option value="2">Padawan</option>
+                <option value="3">Chevalier</option>
+                <option value="4">Maître</option>
+                <option value="5">Grand Maître</option>
+            </select>
+            <div class="guess-level-help">
+                Vous devez deviner un nombre entre 1 et <span class="value"></span>.
+            </div>
+        </div>
+        <div class="guess-bet">
+            <label for="bet">Faites votre pari !</label>
+            <input class="guess-bet-input" type="number" name="bet" id="bet" min="1" required>
+        </div>
+        <div class="guess-check">
+            <button type="submit" class="check">Vérifier</button>
+        </div>
+        <div class="guess-history">
+            <div class="guess-history-title">Historique</div>
+            <ul class="guess-history-list"></ul>
+        </div>
+        <div class="guess-counter"></div>
+        <div class="guess-help">
+            <span class="up">🢁</span>
+            <span class="equal">=</span>
+            <span class="down">🡻</span>
+        </div>
+        <div class="guess-result">
+            <div class="counter">
+                Mauvaise réponse, il vous reste <span class="counter-value"></span> tentative(s).
+            </div>
+            <div class="result">
+                <div class="victory">
+                    <div class="message">🎉 Vous avez gagné ! 🎉</div>
+                </div>
+                <div class="defeat">
+                    <div class="message">💀 Vous avez perdu ! 💀</div>
+                </div>
+            </div>
+            <button type="button" class="reset">Recommencer</button>
+        </div>
+    </form>
+    
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
