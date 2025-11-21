@@ -7,9 +7,8 @@ const
     guessBet = numberGuessNode.querySelector('.guess-bet'),
     guessCheck = numberGuessNode.querySelector('.guess-check'),
     guessHistory = numberGuessNode.querySelector('.guess-history'),
-    guessCounter = numberGuessNode.querySelector('.guess-counter'),
-    guessHelp = numberGuessNode.querySelector('.guess-help'),
-    guessResult = numberGuessNode.querySelector('.guess-result');
+    guessResult = numberGuessNode.querySelector('.guess-result'),
+    guessHelp = numberGuessNode.querySelector('.guess-help');
 
 //sélection de certains éléments spécifiques
 const
