@@ -26,7 +26,7 @@ let
     bet = null,             //pari du joueur
     guess = null,           //nombre à deviner
     history = [],           //historique des propositions du joueur
-    counter = null,   //nombre de tentative restantes
+    counter = null,         //nombre de tentative restantes
     helpDiff = null,        //différence entre le nombre deviné et le résultat attendu
     result = false;         //résultat de la partie
 
